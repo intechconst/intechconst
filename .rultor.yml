@@ -1,0 +1,6 @@
+architect:
+  - kerelape
+merge:
+  script:
+    - "yarn install"
+    - "yarn lint"
