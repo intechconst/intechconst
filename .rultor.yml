@@ -2,5 +2,5 @@ architect:
   - kerelape
 merge:
   script:
-    - "yarn install"
-    - "yarn lint"
+    - "npm install"
+    - "npm lint"
