@@ -3,4 +3,4 @@ architect:
 merge:
   script:
     - "npm install"
-    - "npm lint"
+    - "npm run lint"
