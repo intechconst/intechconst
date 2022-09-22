@@ -16,6 +16,6 @@
     }
 
     .copyright {
-        color: $text-light;
+        color: $text-contrast;
     }
 </style>
