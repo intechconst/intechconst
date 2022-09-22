@@ -1,6 +1,10 @@
-$primary: #C4575E;
-$secondary: #D0BC8A;
+$primary: white;
+$contrast: black;
 
-$text-light: white;
+$surface: $primary;
+$surface-contrast: $contrast;
 
-$footer-color: black;
+$text: $contrast;
+$text-contrast: $primary;
+
+$footer-color: $surface-contrast;
