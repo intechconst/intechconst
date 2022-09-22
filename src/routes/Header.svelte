@@ -16,7 +16,9 @@
 <header class={over ? "over-content" : ""}>
     <Container style="height: fit-content;">
         <Row>
-            <img class="logo" src={Logo} alt="Logo" />
+            <h1>
+                <img class="logo" src={Logo} alt="Промтехстрой" />
+            </h1>
         </Row>
     </Container>
 </header>
@@ -36,15 +38,15 @@
         flex-direction: column;
         justify-content: center;
 
-        border-bottom: none;
+        border-bottom: solid 2px transparent;
         background: $surface;
 
-        transition: all 200ms ease;
+        transition: all 333ms ease;
 
         box-sizing: content-box;
     }
 
     header.over-content {
-        border-bottom: solid 1px $contrast;
+        border-color: $contrast;
     }
 </style>
