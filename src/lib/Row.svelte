@@ -6,9 +6,6 @@
 </div>
 <style lang="scss">
     div {
-        max-width: 1100px;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
+        display: flex;
     }
 </style>

@@ -4,7 +4,7 @@
 </script>
 <div>
     <FlexibleSpace />
-    <Container>
+    <Container style="height: unset;">
         <h1>Промтехстрой</h1>
         <p>Электромонтаж и выполнение общестроительных работ</p>
     </Container>
