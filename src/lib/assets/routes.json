@@ -4,6 +4,10 @@
         "title": "Главная"
     },
     {
+        "path": "/about",
+        "title": "О нас"
+    },
+    {
         "path": "/contact",
         "title": "Контакты"
     }

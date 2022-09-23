@@ -1,7 +1,9 @@
 <script>
     import Container from "$lib/Container.svelte";
-    import Row from "$lib/Row.svelte";
 </script>
+<svelte:head>
+    <title>Контакты</title>
+</svelte:head>
 <Container>
     <div class="content">
         <section class="text">
