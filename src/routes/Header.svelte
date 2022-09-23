@@ -4,6 +4,9 @@
     import Row from "$lib/Row.svelte";
     import { onMount } from "svelte";
     import Logo from "$lib/assets/logo.svg";
+    
+    export let routes: { path: string, title: string }[] = [];
+    export let active: string;
 
     let over = false;
 
@@ -19,6 +22,18 @@
             <h1>
                 <img class="logo" src={Logo} alt="Промтехстрой" />
             </h1>
+            <FlexibleSpace />
+            <nav>
+                <Row>
+                    {#each routes as route}
+                        <a 
+                            href={route.path}
+                            class={route.path == active ? "active" : ""}>
+                            {route.title}
+                        </a>
+                    {/each}
+                </Row>
+            </nav>
         </Row>
     </Container>
 </header>
@@ -48,5 +63,28 @@
 
     header.over-content {
         border-color: $contrast;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-left: 1rem;
+            text-decoration: none;
+            color: $text;
+            border-bottom: solid 2px transparent;
+
+            transition: all 200ms ease;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &.active {
+                color: $accent;
+                border-color: $accent;
+            }
+        }
     }
 </style>
