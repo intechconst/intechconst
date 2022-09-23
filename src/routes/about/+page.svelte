@@ -117,7 +117,13 @@
     @import "../../sizes.scss";
 
     .content {
-        padding: $header-height + $spacing 0;
+        padding-top: $header-height + $spacing;
+        padding-bottom: $spacing;
+
+        @media (orientation: portrait) {
+            padding-top: $header-height + $spacing-portrait;
+            padding-bottom: $spacing-portrait;
+        }
     }
 
     ul {

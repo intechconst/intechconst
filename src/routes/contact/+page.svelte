@@ -44,6 +44,8 @@
 
         @media (orientation: portrait) {
             flex-direction: column;
+            padding-top: $header-height + $spacing-portrait;
+            padding-bottom: $spacing-portrait;
         }
     }
 
@@ -60,7 +62,11 @@
         }
 
         @media (max-width: 880px) {
-            display: none;
+            width: 100%;
+            height: unset;
+            flex: 1;
+            border: none;
+            margin-top: 1rem;
         }
     }
 
