@@ -2,9 +2,6 @@
     import Container from "$lib/Container.svelte";
     import FlexibleSpace from "$lib/FlexibleSpace.svelte";
 </script>
-<svelte:head>
-    <title>Промтехстрой</title>
-</svelte:head>
 <div>
     <FlexibleSpace />
     <Container style="height: unset;">

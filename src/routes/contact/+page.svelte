@@ -1,9 +1,6 @@
 <script>
     import Container from "$lib/Container.svelte";
 </script>
-<svelte:head>
-    <title>Контакты</title>
-</svelte:head>
 <Container>
     <div class="content">
         <section class="text">
