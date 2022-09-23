@@ -5,7 +5,7 @@
 <div>
     <FlexibleSpace />
     <Container style="height: unset;">
-        <h1>Промтехстрой</h1>
+        <h2>Промтехстрой</h2>
         <p>Электромонтаж и выполнение общестроительных работ</p>
     </Container>
     <FlexibleSpace />
@@ -17,12 +17,12 @@
         flex-direction: column;
     }
 
-    h1, p {
+    h2, p {
         width: 100%;
         text-align: center;
     }
 
-    h1 {
+    h2 {
         font-size: 5rem;
     }
 
