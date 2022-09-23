@@ -117,7 +117,7 @@
     @import "../../sizes.scss";
 
     .content {
-        padding-top: $header-height + $spacing;
+        padding: $header-height + $spacing 0;
     }
 
     ul {
