@@ -24,6 +24,10 @@
 
     h2 {
         font-size: 5rem;
+
+        @media (max-width: 880px) {
+            font-size: 2rem;
+        }
     }
 
     p {
