@@ -1,6 +1,5 @@
 <script>
     import Container from "$lib/Container.svelte";
-    import Row from "$lib/Row.svelte";
 </script>
 <Container>
     <div class="content">
@@ -37,8 +36,6 @@
     @import "../../sizes.scss";
     @import "../../colors.scss";
 
-    $spacing: 4rem;
-
     .content {
         height: 100vh;
         padding-top: $header-height + $spacing;
@@ -47,6 +44,8 @@
 
         @media (orientation: portrait) {
             flex-direction: column;
+            padding-top: $header-height + $spacing-portrait;
+            padding-bottom: $spacing-portrait;
         }
     }
 
@@ -63,7 +62,11 @@
         }
 
         @media (max-width: 880px) {
-            display: none;
+            width: 100%;
+            height: unset;
+            flex: 1;
+            border: none;
+            margin-top: 1rem;
         }
     }
 

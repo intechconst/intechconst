@@ -8,15 +8,20 @@
     export let data: LayoutData;
 
     let active = "";
+    let title = "Промтехстрой";
 
     onMount(() => {
         page.subscribe(page => {
             const { pathname } = page.url;
             const route = pathname.split("/").filter(Boolean)[0] || "";
             active = "/" + route;
+            title = document.getElementsByTagName("h2")[0].innerText;
         });
     });
 </script>
+<svelte:head>
+    <title>{title}</title>
+</svelte:head>
 <Header routes={data.routes} {active} />
 <main>
     <slot />
