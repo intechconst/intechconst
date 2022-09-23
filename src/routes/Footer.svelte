@@ -1,6 +1,6 @@
 <footer>
     <span class="copyright">
-        © 2022 ООО "ПромТехСтрой"
+        © 2022 ООО "Промтехстрой"
     </span>
 </footer>
 <style lang="scss">
