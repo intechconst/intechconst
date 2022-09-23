@@ -37,8 +37,6 @@
     @import "../../sizes.scss";
     @import "../../colors.scss";
 
-    $spacing: 4rem;
-
     .content {
         height: 100vh;
         padding-top: $header-height + $spacing;
