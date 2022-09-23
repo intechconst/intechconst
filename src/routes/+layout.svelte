@@ -32,4 +32,11 @@
     :global(a) {
         color: $accent;
     }
+
+    :global(html) {
+        font-size: 14px;
+        @media (max-width: 880) {
+            font-size: 9px;
+        }
+    }
 </style>
